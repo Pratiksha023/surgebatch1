@@ -1,0 +1,7 @@
+task:
+1. create a private repo on the git hub 
+2. clone it on the local
+3. apply branching policy that nobody should make direct changes on the main branch
+4. create a dummy workflow
+5. configure self hosted runner on your laptop
+6. run the dummy workflow from your self hosted runner
