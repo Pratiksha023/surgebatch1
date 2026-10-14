@@ -1,4 +1,4 @@
-resource_group_name = "rg2"
+resource_group_name = "rgdev"
 location = "eastus"
 environment = "dev"
-storage_account_name = "jatindemo1234343"
+storage_account_name = "jatindev1234343"
