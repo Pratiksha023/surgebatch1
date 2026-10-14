@@ -5,3 +5,24 @@ task:
 4. create a dummy workflow
 5. configure self hosted runner on your laptop
 6. run the dummy workflow from your self hosted runner
+
+14 october
+task: terraform
+1. create terraform modules for
+   kubernetes cluster
+   acr(azure container registry)
+   storage account
+   2 linux virtual machine (jenkins) using the for each loop
+   vnet
+
+2. things to explore in terraform:
+   1. different data types
+   blocks:
+     data
+     import
+     outputs
+
+3. try to explore if i have to run any script on the virtual machine after creation how can i do it with terraform
+
+4. explore how to runn the terraform code using git hub actions(optional)
+
