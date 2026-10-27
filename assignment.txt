@@ -32,3 +32,4 @@ task 1: create a python script to create a excel file and input the information 
         step 2: store that information in excel file. 
         step 3: read the excel file and store the information into my sql database
    (note* try to create script with concept of module, packages)
+        step 4: create front page through which you will upload the excel and it will store the data on my sql
