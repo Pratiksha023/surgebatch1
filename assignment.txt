@@ -26,3 +26,9 @@ task: terraform
 
 4. explore how to runn the terraform code using git hub actions(optional)
 
+Python assignment 
+
+task 1: create a python script to create a excel file and input the information for user name, age, phone number, address
+        step 2: store that information in excel file. 
+        step 3: read the excel file and store the information into my sql database
+   (note* try to create script with concept of module, packages)
