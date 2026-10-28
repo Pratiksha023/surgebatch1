@@ -26,6 +26,8 @@ task: terraform
 
 4. explore how to runn the terraform code using git hub actions(optional)
 
+27th oct
+
 Python assignment 
 
 task 1: create a python script to create a excel file and input the information for user name, age, phone number, address
@@ -33,3 +35,64 @@ task 1: create a python script to create a excel file and input the information 
         step 3: read the excel file and store the information into my sql database
    (note* try to create script with concept of module, packages)
         step 4: create front page through which you will upload the excel and it will store the data on my sql
+
+28th oct 
+
+# Jenkins Hands-On Assignments: CI/CD and Infrastructure Automation
+
+## Task 1: Jenkins Pipeline Using a Private GitHub Repository
+
+**Objective:** Integrate Jenkins with a private GitHub repository and execute a pipeline defined in a `Jenkinsfile`.
+
+**Requirements:**
+1. Create a private repository on GitHub.
+2. Create a `Jenkinsfile` containing the pipeline stages and push it to the repository.
+3. Configure Jenkins credentials to securely access the private repository.
+4. Create a Jenkins Pipeline job and configure it to retrieve the `Jenkinsfile` from the repository.
+5. Execute the pipeline and verify that all stages run successfully.
+
+**Expected Outcome:** Jenkins should securely fetch the `Jenkinsfile` from the private GitHub repository and execute the defined pipeline.
+
+## Task 2: Create a Parameterized Terraform Infrastructure Pipeline
+
+**Objective:** Build a Jenkins pipeline that allows users to select Terraform actions at runtime.
+
+**Requirements:**
+1. Create a Jenkins pipeline for Terraform infrastructure management.
+2. Add a user input parameter named `ACTION` with the following options:
+   - `init`
+   - `plan`
+   - `apply`
+   - `destroy`
+3. Configure the pipeline to execute the corresponding Terraform commands based on the selected action.
+4. Ensure that `terraform apply` and `terraform destroy` require appropriate approval before execution.
+5. Configure the pipeline to display the execution status and handle failures appropriately.
+6. Store cloud credentials securely using Jenkins Credentials rather than hardcoding secrets in the pipeline.
+
+**Expected Outcome:** Users should be able to select a Terraform action when starting the Jenkins job, and the pipeline should execute the appropriate operation.
+
+## Task 3: Provision an Azure Virtual Machine and Configure a Jenkins Agent
+
+**Objective:** Use Terraform and Jenkins to provision an Azure virtual machine and configure it as a Jenkins build agent.
+
+**Requirements:**
+1. Write Terraform configuration files to provision an Azure virtual machine and its required networking resources.
+2. Store the Terraform code in a GitHub repository.
+3. Create a Jenkins pipeline that retrieves the Terraform code and provisions the infrastructure.
+4. Verify that the Azure virtual machine has been created successfully and is running.
+5. Configure the virtual machine with the prerequisites required for a Jenkins agent, including a compatible Java runtime if needed.
+6. Establish a secure connection between the Jenkins controller and the new agent.
+7. Configure the agent in Jenkins and verify that it is online.
+8. Execute a test pipeline on the new agent to confirm that it can run build jobs successfully.
+9. Document the process for cleaning up the infrastructure when it is no longer required.
+
+**Expected Outcome:** A Jenkins pipeline should provision an Azure virtual machine using Terraform, configure it as a Jenkins agent, and demonstrate successful job execution on that agent.
+
+## General Guidelines
+
+- Use GitHub for version control and maintain a clear repository structure.
+- Use Jenkins Credentials or an approved secret-management solution for sensitive information.
+- Follow infrastructure-as-code best practices and avoid hardcoding environment-specific values.
+- Include validation, error handling, and execution logs in your pipelines.
+- Document the implementation steps, configuration, and final results.
+- Ensure that temporary Azure resources are destroyed after testing to avoid unnecessary costs.
